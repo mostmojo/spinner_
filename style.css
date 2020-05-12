@@ -36,7 +36,6 @@ input {
   position: absolute;
   width: 200px;
   height: 200px;
-  /* padding: 10px; */
   color: white;
   font-weight: bold;
   text-shadow: 0 0 5px black;
@@ -116,6 +115,13 @@ input {
 }
 
 :checked ~ .wheel {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.spin-it {
   animation-name: spin;
   animation-duration: 3s;
   animation-timing-function: ease-out;

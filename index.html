@@ -12,7 +12,7 @@
     </div>
     <div class="spin-the-wheel">
       <label>
-        <input type="radio" />
+        <input id="myCheck" type="radio" />
         <div class="clicker"></div>
         <div class="wheel">
           <div class="option o1">
@@ -35,8 +35,22 @@
           Click to claim your prize.
         </div>
 
-        <a href="https://mostmojo.github.io" target="_blank"></a>
+        <a id="link" href="https://mostmojo.github.io" target="_blank"></a>
       </label>
     </div>
+    <button id="btn">
+      hi
+    </button>
+    <script>
+      btn = document.getElementById("btn");
+      wheel = document.querySelector(".spin-the-wheel");
+      link = document.getElementById("link");
+
+      btn.addEventListener("click", function () {
+        wheel.classList.add("spin-it");
+        link.style.display = "block";
+        document.querySelector(".message").style.display = "block";
+      });
+    </script>
   </body>
 </html>
