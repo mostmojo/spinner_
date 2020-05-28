@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <div class="message">
+        <div class="message message-spun">
           You won a new clipper!
           <br />
           Click to claim your prize.
@@ -37,10 +37,11 @@
 
         <a id="link" href="https://mostmojo.github.io" target="_blank"></a>
       </label>
+      <button id="btn">
+        Click to spin
+      </button>
     </div>
-    <button id="btn">
-      hi
-    </button>
+
     <script>
       btn = document.getElementById("btn");
       wheel = document.querySelector(".spin-the-wheel");
@@ -49,7 +50,7 @@
       btn.addEventListener("click", function () {
         wheel.classList.add("spin-it");
         link.style.display = "block";
-        document.querySelector(".message").style.display = "block";
+        document.querySelector(".message-spun").style.opacity = "1";
       });
     </script>
   </body>
